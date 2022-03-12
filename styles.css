@@ -39,12 +39,12 @@ body {
 }
 
 .github-img {
-    height: 80%;
+    height: 60%;
     width: auto;
 }
 
 .github-text {
-    height: 55%;
+    height: 35%;
     width: auto;
 }
 
@@ -108,11 +108,36 @@ form {
 }
 
 input {
+    font-family: inherit;
+    font-size: 100%;
+    outline: none;
+    border: none;
     width: 15rem;
     height: 1.75rem;
     padding: 5px 10px;
-    font-family: inherit;
-    font-size: 100%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    
+}
+
+input:focus {
+    border: 2px solid #333;
+    box-shadow: 0 2px 3px #aaa;
+    
+}
+
+input:valid {
+    border: 1.5px solid rgb(19, 100, 9);
+}
+input:focus:valid {
+    border: 2px solid rgb(19, 100, 9);
+    
+}
+input:not(:placeholder-shown):invalid {
+    border: 1.5px solid #ce1313;
+}
+input:not(:placeholder-shown):focus:invalid {
+    border: 2px solid #ce1313;
 }
 
 label {
@@ -129,12 +154,12 @@ label {
 
 button {
     outline: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     margin-bottom: 20px;
     font-weight: bold;
     color: #fff;
-    border: 1px solid rgb(10, 61, 3);
-    background-color: rgb(10, 61, 3);
+    border: 1px solid rgb(19, 100, 9);
+    background-color: rgb(19, 100, 9);
     border-radius: 5px;
 }
 
@@ -143,10 +168,10 @@ button {
 }
 
 .login a:link {
-    color: rgb(10, 61, 3);
+    color: rgb(19, 100, 9);
 }
 .login a:visited {
-    color: rgb(10, 61, 3);
+    color: rgb(19, 100, 9);
 }
 
 
