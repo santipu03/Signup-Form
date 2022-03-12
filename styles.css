@@ -1,11 +1,15 @@
 /* General selectors */
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     display: flex;
     height: 100vh;
     width: 100vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Left section*/
@@ -36,10 +40,12 @@ body {
 
 .github-img {
     height: 80%;
+    width: auto;
 }
 
 .github-text {
     height: 55%;
+    width: auto;
 }
 
 .credits {
@@ -67,18 +73,80 @@ body {
 }
 
 .form-heading{
-    height: 20%;
+    height: 25%;
     background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.legend {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .form {
-    height: 60%;
-    
+    height: 50%;
+    padding: 30px;
+    box-shadow: 0 3px 5px #ccc;
+    z-index: 2;
 }
 
-.button-account {
-    height: 20%;
+form {
+    display: grid;
+    grid-template-columns:40% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+input {
+    width: 15rem;
+    height: 1.75rem;
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+label {
+    font-size: 13px;
+    letter-spacing: 2px;
+
+}
+
+.bottom-form {
+    height: 25%;
     background-color: #eee;
+    padding: 30px;
+}
+
+button {
+    outline: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid rgb(10, 61, 3);
+    background-color: rgb(10, 61, 3);
+    border-radius: 5px;
+}
+
+.login {
+    font-size: 14px;
+}
+
+.login a:link {
+    color: rgb(10, 61, 3);
+}
+.login a:visited {
+    color: rgb(10, 61, 3);
 }
 
 

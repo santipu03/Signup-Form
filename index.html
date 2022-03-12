@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -22,38 +25,50 @@
 
     <section class="right">
         <div class="form-heading">
-            <div>Entire weeks working and now all is gone...</div>
-            <div>Github brings the perfect solution for you and your code. Store, share and contribute to this community</div>
+            <div class="title">Entire weeks working and now all is gone...</div>
+            <div>Github brings the perfect solution for you and your code. Store, share and contribute to the open source community</div>
         </div>
 
         <div class="form">
-            <div>
+            <div class="legend">
                 Let's do it!
             </div>
-            <form action="" method="post">
-                <label for="">FIRST NAME</label>
-                <input type="text" name="firstName" id="firstName">
+            <form action="" method="post" autocomplete="off" id="form">
+                <div>
+                    <label for="">FIRST NAME</label><br>
+                    <input type="text" name="firstName" id="firstName" minlength="2" maxlength="15" required>
+                </div>
 
-                <label for="lastName">LAST NAME</label>
-                <input type="text" name="lastName" id="lastName">
+                <div>
+                    <label for="lastName">LAST NAME</label><br>
+                    <input type="text" name="lastName" id="lastName" minlength="2" maxlength="20" required>
+                </div>
 
-                <label for="email">EMAIL</label>
-                <input type="text" name="email" id="email">
+                <div>
+                    <label for="email">EMAIL</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-                <label for="phone">PHONE NUMBER</label>
-                <input type="text" name="phone" id="phone">
+                <div>
+                    <label for="phone">PHONE NUMBER</label><br>
+                    <input type="text" name="phone" id="phone" required>
+                </div>
 
-                <label for="password">PASSWORD</label>
-                <input type="text" name="password" id="password">
+                <div>
+                    <label for="password">PASSWORD</label><br>
+                    <input type="password" name="password" id="password" required>
+                </div>
 
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="text" name="confirm-password" id="confirm-password">
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label><br>
+                    <input type="password" name="confirm-password" id="confirm-password" required>
+                </div>
             </form>
         </div>
 
-        <div class="button-account">
-            <button>Create account</button>
-            <div>Already have an account? Log In</div>
+        <div class="bottom-form">
+            <button type="submit" form="form">Create account</button>
+            <div class="login">Already have an account? <a href="">Log In</a></div>
         </div>
         
     </section>
